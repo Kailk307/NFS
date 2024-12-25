@@ -47,7 +47,7 @@ Dự án nhằm thiết lập và cấu hình hệ thống chia sẻ tệp tin q
 #### /var/nfs/shared 192.168.1.101(rw,sync,no_subtree_check)
 #### sudo exportfs -ra ( áp dụng)
 - Cấu hình tự động mount
-#### sudo nano /etc/fstab
+#### sudo nano /etc/fstab (chỉnh sửa)
 #### 192.168.1.100:/var/nfs/shared /mnt/nfs_shared nfs defaults 0 0
-#### sudo reboot
-#### df -h | grep nfs
+#### sudo reboot (khởi động máy để kiểm tra)
+#### df -h | grep nfs (kiểm tra mount)
